@@ -1,5 +1,21 @@
 # Emoji Generator
 
+## Build
+
+1. Get Libraries to build
+
+ ```bash
+ go get github.com/nfnt/resize
+ go get github.com/golang/freetype
+ go get github.com/soniakeys/quant/median
+ go get github.com/BurntSushi/graphics-go/graphics
+```
+2. Build Command
+
+```
+go build -o emojigen main.go
+```
+
 ## Usage
 
 `emojigen` command can generate emoji image for Custom Emoji in Chat Application such as Slack, Mattermost etc. 
