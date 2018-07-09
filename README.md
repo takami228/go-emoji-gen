@@ -15,7 +15,7 @@ $ ./emojigen --type resize --image icon.jpg  --out ./path/to/output
 ## Generate Text Image
 
 ```
-./emojigen -type text -string "疲労困憊" -font sample.ttf 
+./emojigen -type text -string "なるほど" -font sample.ttf 
 
 ./emojigen -type text -string "忖　　度" -font sample.ttf 
 ```

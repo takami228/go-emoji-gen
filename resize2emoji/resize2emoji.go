@@ -40,7 +40,7 @@ func ResizeImage(imageFilePath string, outputFilePath string) error {
 	defer resizedImageFile.Close()
 
 	//Exec Resize
-	resizedImage := resize.Resize(128, 0, img, resize.Lanczos3)
+	resizedImage := resize.Resize(128, 128, img, resize.Lanczos3)
 	err = png.Encode(resizedImageFile, resizedImage)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "[ERROR] File Encode Failed.", err)
