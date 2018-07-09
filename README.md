@@ -2,7 +2,7 @@
 
 ## Usage
 
-`emojigen` command can generate emoji image for Custom Emoji in Chat Application such asu Slack, Mattermost etc. 
+`emojigen` command can generate emoji image for Custom Emoji in Chat Application such as Slack, Mattermost etc. 
 
 ## Reize some image
 
@@ -25,3 +25,9 @@ $ ./emojigen --type resize --image icon.jpg  --out ./path/to/output
 ```
 ./emojigen -type animation -image sample.png -out sample.gif
 ```
+
+## Known Issue(To Do)
+
+* Resize operation supports only square image. Rectangle dose not work properly.
+* Generate Text operation does not fit according to string length and font size.
+* Animation operation does not support transparent background.
