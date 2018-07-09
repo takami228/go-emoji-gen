@@ -1,5 +1,7 @@
 # Emoji Generator
 
+`emojigen` command can generate emoji image for Custom Emoji in Chat Application such as Slack, Mattermost etc. 
+
 ## Build
 
 1. Get Libraries to build
@@ -18,32 +20,32 @@ go build -o emojigen main.go
 
 ## Usage
 
-`emojigen` command can generate emoji image for Custom Emoji in Chat Application such as Slack, Mattermost etc. 
-
-## Reize some image
+### Reize some image
 
 ```
-$ ./emojigen --type resize --image icon.jpg 
+$ ./emojigen -type resize -image sample.png 
 
-$ ./emojigen --type resize --image icon.jpg  --out ./path/to/output
+$ ./emojigen -type resize -image sample.png  -out ./path/to/output.png
 ```
 
-## Generate Text Image
+### Generate Text Image
 
 ```
-./emojigen -type text -string "なるほど" -font sample.ttf 
+$ ./emojigen -type text -string "なるほど" -font sample.ttf 
 
-./emojigen -type text -string "忖　　度" -font sample.ttf 
+$ ./emojigen -type text -string "忖　　度" -font sample.ttf -out ./path/to/output.png
 ```
 
-## Generate Annimation Gif
+### Generate Annimation Gif
 
 ```
-./emojigen -type animation -image sample.png -out sample.gif
+$ ./emojigen -type animation -image sample.png -out sample.gif
 ```
 
 ## Known Issue(To Do)
 
+* emojine support only "png" file.
 * Resize operation supports only square image. Rectangle dose not work properly.
-* Generate Text operation does not fit according to string length and font size.
+* Generate Text operation does not fit size according to string length and font size.
+* Animation operation support only rotation.
 * Animation operation does not support transparent background.
